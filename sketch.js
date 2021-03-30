@@ -6,7 +6,7 @@ function setup() {
   createCanvas(1000, 1000).parent("canvas").mouseClicked(randomOne);
   noFill();
   background(0);
-  frameRate(30)
+  frameRate(60)
 
   params = new URLSearchParams(window.location.search)
 
@@ -41,7 +41,7 @@ function draw() {
   
   beginShape()
   
-  stroke(255, 20);
+  stroke(255, 15);
   strokeWeight(1);
   
   
