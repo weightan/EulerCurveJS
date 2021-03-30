@@ -29,7 +29,7 @@ function randomOne() {
 
 function updateLink () {
   
-  const link = `https://weightan.github.io/LissajousCurvesJS?yp=${param1}&xp=${param2}`
+  const link = `https://weightan.github.io/EulerCurveJS/?yp=${param1}&xp=${param2}`
   
   select("#permalink").html(link).attribute("href", link)
 }
