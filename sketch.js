@@ -29,44 +29,11 @@ function randomOne() {
 
 function updateLink () {
   
-  const link = `https://weightan.github.io/EulerCurveJS/?yp=${param1}&xp=${param2}`
+  const link = `https://weightan.github.io/EulerCurveJS?yp=${param1}&xp=${param2}`
   
   select("#permalink").html(link).attribute("href", link)
 }
 
-function addVert(i) {
-  if (param == 0){
-  curveVertex(
-    sin(i * freqX + radians(frameCount)) * cos(i * modx + radians(frameCount*3)) * 0.9*width/2 ,
-    sin(i * freqY ) * cos(i * mody) * 0.9*height/2
-  )
-  } else if (param == 1) {
-    curveVertex(
-    sin(i * freqX + radians(frameCount*3)) * cos(i * modx) * 0.9*width/2 ,
-    sin(i * freqY ) * cos(i * mody) * 0.9*height/2
-  )
-  }else if (param == 2) {
-    curveVertex(
-    sin(i * freqX + radians(frameCount*3)) * cos(i * modx) * 0.9*width/2 ,
-    sin(i * freqY + radians(frameCount*3)) * cos(i * mody) * 0.9*height/2
-  )
-  }else if (param == 3) {
-    curveVertex(
-    sin(i * freqX ) * cos(i * modx + radians(frameCount*3)) * 0.9*width/2 ,
-    sin(i * freqY ) * cos(i * mody+ radians(frameCount*3)) * 0.9*height/2
-  )
-  }else if (param == 4) {
-    curveVertex(
-    sin(i * freqX + radians(frameCount)) * cos(i * modx + radians(frameCount)) * 0.9*width/2 ,
-    sin(i * freqY + radians(frameCount)) * cos(i * mody+ radians(frameCount)) * 0.9*height/2
-  )
-  }else if (param == 5) {
-    curveVertex(
-    sin(i * freqX*radians(frameCount) +  radians(frameCount)) * cos(i * modx ) * 0.9*width/2 ,
-    sin(i * freqY) * cos(i * mody) * 0.9*height/2
-  )
-  }
-}
 
 function draw() {
   
