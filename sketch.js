@@ -12,7 +12,7 @@ function setup() {
 
   if(params.get("xp") && params.get("yp")) {
     param1 = parseInt(params.get("yp"));
-    param1 = parseInt(params.get("xp"));
+    param2 = parseInt(params.get("xp"));
     updateLink()
   } else {
     randomOne()
@@ -29,7 +29,7 @@ function randomOne() {
 
 function updateLink () {
   
-  const link = `https://weightan.github.io/EulerCurveJS?yp=${param1}&xp=${param2}`
+  const link = `https://weightan.github.io/EulerCurveJS?xp=${param2}&yp=${param1}`
   
   select("#permalink").html(link).attribute("href", link)
 }
