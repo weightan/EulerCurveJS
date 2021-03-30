@@ -144,10 +144,9 @@ function bigX(ts){
     
     return sin(ts*ts - radians(frameCount))*sin(ts- radians(frameCount));
     
-  } else if (param1 == 8){
-    //broken
-    return sin(ts*ts - radians(frameCount))*sin(ts- radians(frameCount));
-    //return sin(ts*ts )*sin(ts*ts - radians(frameCount));
+  } else if (param2 == 8){
+
+    return sin(ts*ts)*sin(ts - radians(frameCount));
     
   } else if (param2 == 9){
     
