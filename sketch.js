@@ -61,55 +61,54 @@ function draw() {
 }
 
 
-
 function bigY(ts){
   if (param1 == 1){
     
-    return sin(ts*ts - radians(frameCount))*cos(ts- radians(frameCount));
+    return sin(ts*ts - radians(frameCount/5))*cos(ts- radians(frameCount/5));
     
   } else if (param1 == 2){
     
-    return sin(ts*ts)*cos(ts- radians(frameCount));
+    return sin(ts*ts)*cos(ts- radians(frameCount/5));
     
   } else if (param1 == 3){
     
-    return sin(ts*ts - radians(frameCount))*cos(ts);
+    return sin(ts*ts - radians(frameCount/5))*cos(ts);
     
   } else if (param1 == 4){
     
-    return cos(ts*ts - radians(frameCount))*sin(ts- radians(frameCount));
+    return cos(ts*ts - radians(frameCount/5))*sin(ts- radians(frameCount/5));
     
   } else if (param1 == 5){
     
-    return cos(ts*ts)*sin(ts- radians(frameCount));
+    return cos(ts*ts)*sin(ts- radians(frameCount/5));
     
   } else if (param1 == 6){
     
-    return cos(ts*ts - radians(frameCount))*sin(ts);
+    return cos(ts*ts - radians(frameCount/5))*sin(ts);
     
   } else if (param1 == 7){
     
-    return sin(ts*ts - radians(frameCount))*sin(ts- radians(frameCount));
+    return sin(ts*ts - radians(frameCount/5))*sin(ts- radians(frameCount/5));
     
   } else if (param1 == 8){
     
-    return sin(ts*ts)*sin(ts- radians(frameCount));
+    return sin(ts*ts)*sin(ts- radians(frameCount/5));
     
   } else if (param1 == 9){
     
-    return sin(ts*ts - radians(frameCount))*sin(ts);
+    return sin(ts*ts - radians(frameCount/5))*sin(ts);
     
   }else if (param1 == 10){
     
-    return cos(ts*ts - radians(frameCount))*cos(ts- radians(frameCount));
+    return cos(ts*ts - radians(frameCount/5))*cos(ts- radians(frameCount/5));
     
   } else if (param1 == 11){
     
-    return cos(ts*ts )*cos(ts- radians(frameCount));
+    return cos(ts*ts )*cos(ts- radians(frameCount/5));
     
   } else if (param1 == 12){
     
-    return cos(ts*ts - radians(frameCount))*cos(ts);
+    return cos(ts*ts - radians(frameCount/5))*cos(ts);
     
   } 
   
@@ -118,51 +117,51 @@ function bigY(ts){
 function bigX(ts){
   if (param2 == 1){
     
-    return sin(ts*ts - radians(frameCount))*cos(ts- radians(frameCount));
+    return sin(ts*ts - radians(frameCount/5))*cos(ts- radians(frameCount/5));
     
   } else if (param2 == 2){
     
-    return sin(ts*ts)*cos(ts- radians(frameCount));
+    return sin(ts*ts)*cos(ts- radians(frameCount/5));
     
   } else if (param2 == 3){
     
-    return sin(ts*ts - radians(frameCount))*cos(ts);
+    return sin(ts*ts - radians(frameCount/5))*cos(ts);
     
   }else if (param2 == 4){
     
-    return cos(ts*ts - radians(frameCount))*sin(ts- radians(frameCount));
+    return cos(ts*ts - radians(frameCount/5))*sin(ts- radians(frameCount/5));
     
   } else if (param2 == 5){
     
-    return cos(ts*ts)*sin(ts- radians(frameCount));
+    return cos(ts*ts)*sin(ts- radians(frameCount/5));
     
   } else if (param2 == 6){
     
-    return cos(ts*ts - radians(frameCount))*sin(ts);
+    return cos(ts*ts - radians(frameCount/5))*sin(ts);
     
   } else if (param2 == 7){
     
-    return sin(ts*ts - radians(frameCount))*sin(ts- radians(frameCount));
-    
+    return sin(ts*ts - radians(frameCount/5))*sin(ts- radians(frameCount/5));
+  
   } else if (param2 == 8){
 
-    return sin(ts*ts)*sin(ts - radians(frameCount));
+    return sin(ts*ts )*sin(ts*ts - radians(frameCount/5/5));
     
   } else if (param2 == 9){
     
-    return sin(ts*ts - radians(frameCount))*sin(ts);
+    return sin(ts*ts - radians(frameCount/5))*sin(ts);
     
   }else if (param2 == 10){
     
-    return cos(ts*ts - radians(frameCount))*cos(ts- radians(frameCount));
+    return cos(ts*ts - radians(frameCount/5))*cos(ts- radians(frameCount/5));
     
   } else if (param2 == 11){
     
-    return cos(ts*ts )*cos(ts- radians(frameCount));
+    return cos(ts*ts )*cos(ts- radians(frameCount/5));
     
   } else if (param2 == 12){
     
-    return cos(ts*ts - radians(frameCount))*cos(ts);
+    return cos(ts*ts - radians(frameCount/5))*cos(ts);
     
   }  
 }  
